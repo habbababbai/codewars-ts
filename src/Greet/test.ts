@@ -1,9 +1,9 @@
-import { assert } from "chai";
+import { assert } from 'chai';
 import { greet } from './index';
 
-describe("Basic tests", () => {
-  it("Should pass basic tests", () => {
-    assert.equal(greet("Ryan"), "Hello, Ryan how are you doing today?");
-    assert.equal(greet("Shingles"), "Hello, Shingles how are you doing today?");
+describe('Basic tests', () => {
+  it('Should pass basic tests', () => {
+    assert.equal(greet('Ryan'), 'Hello, Ryan how are you doing today?');
+    assert.equal(greet('Shingles'), 'Hello, Shingles how are you doing today?');
   });
 });

@@ -5,21 +5,24 @@
     "main": "index.js",
     "type": "commonjs",
     "scripts": {
-      "test": "mocha --require ts-node/register 'src/**/test.ts' --recursive",
-      "test:single": "mocha --require ts-node/register", 
-      "test:runner": "ts-node src/testRunner.ts"
+        "test": "mocha --require ts-node/register 'src/**/test.ts' --recursive",
+        "test:single": "mocha --require ts-node/register",
+        "test:runner": "ts-node src/testRunner.ts",
+        "lint": "prettier --check 'src/**/*.{ts,js}'",
+        "format": "prettier --write 'src/**/*.{ts,js}'"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "@types/chai": "^5.2.3",
-      "@types/mocha": "^10.0.10",
-      "@types/node": "^25.0.9",
-      "chai": "^6.2.2",
-      "mocha": "^11.7.5",
-      "ts-node": "^10.9.2",
-      "typescript": "^5.9.3",
-      "chalk": "^5.3.0"
+        "@types/chai": "^5.2.3",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^25.0.9",
+        "chai": "^6.2.2",
+        "chalk": "^5.3.0",
+        "mocha": "^11.7.5",
+        "prettier": "^3.8.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
     }
-  }
+}
