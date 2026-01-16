@@ -1,18 +1,24 @@
 {
-  "name": "codewars-ts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+    "name": "codewars-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require ts-node/register 'src/**/test.ts' --recursive",
+    "test:single": "mocha --require ts-node/register",
+    "test:vowel": "mocha --require ts-node/register src/Vowel_Count/test.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@types/node": "^25.0.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  }
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@types/chai": "^5.2.3",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^25.0.9",
+        "chai": "^6.2.2",
+        "mocha": "^11.7.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
 }

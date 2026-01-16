@@ -55,9 +55,21 @@ npx tsc
 
 ### 3. Run local tests
 
+**Option A: Using npm scripts (recommended)**
+```bash
+# Run specific test (if you add script in package.json)
+npm run test:vowel
+
+# Run any test by path
+npm run test:single src/Vowel_Count/test.ts
+```
+
+**Option B: Direct ts-node**
 ```bash
 npx ts-node src/001-count-vowels/test.ts
 ```
+
+**Note:** If your test uses Mocha (`describe`, `it`), use the npm scripts above. If it uses simple `console.log`, you can use direct ts-node.
 
 ---
 
